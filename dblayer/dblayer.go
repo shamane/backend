@@ -3,7 +3,7 @@ package dblayer
 import (
 	"errors"
 
-	"github.com/shamane/backend/models"
+	"github.com/shamane/backend/tree/main/models"
 )
 
 type DBLayer interface {

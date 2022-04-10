@@ -12,7 +12,7 @@ import (
     "gorm.io/driver/postgres"
     "gorm.io/gorm"
 
-	"github.com/shamane/backend/models"
+	"github.com/shamane/backend/tree/main/models"
 	"golang.org/x/crypto/bcrypt"
 )
 

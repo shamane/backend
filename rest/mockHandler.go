@@ -7,7 +7,7 @@ import (
 	"os"
 
 	"github.com/gin-gonic/gin"
-	"github.com/shamane/backend/models"
+	"github.com/shamane/backend/tree/main/models"
 )
 
 /*

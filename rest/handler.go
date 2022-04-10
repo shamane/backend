@@ -7,8 +7,8 @@ import (
 	"strconv"
 
 	"github.com/gin-gonic/gin"
-	"github.com/shamane/backend/dblayer"
-	"github.com/shamane/backend/models"
+	"github.com/shamane/backend/tree/main/dblayer"
+	"github.com/shamane/backend/tree/main/models"
 	"github.com/stripe/stripe-go"
 	"github.com/stripe/stripe-go/charge"
 	"github.com/stripe/stripe-go/customer"
