@@ -2,15 +2,15 @@ package dblayer
 
 import (
 	"errors"
-    "log"
+	// "log"
 
 	// "database/sql"
 	// _ "github.com/lib/pq"
 	// _ "github.com/go-sql-driver/mysql"
 	// "github.com/jinzhu/gorm"
 
-    "gorm.io/driver/postgres"
-    "gorm.io/gorm"
+	"github.com/go-gorm/gorm"
+	"gorm.io/driver/postgres"
 
 	"github.com/shamane/backend/models"
 	"golang.org/x/crypto/bcrypt"
@@ -115,9 +115,7 @@ func checkPassword(existingHash, incomingPass string) bool {
 
 func (db *DBORM) SignOutUserById(id int) error {
 	customer := models.Customer{
-		Model: gorm.Model{
-			ID: uint(id),
-		},
+		Model: gorm.Model{ID: uint(id)},
 	}
 	return db.Table("Customers").Where(&customer).Update("loggedin", 0).Error
 }
